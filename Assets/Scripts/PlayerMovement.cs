@@ -27,7 +27,6 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Movimiento del jugador con física
         rb.MovePosition(rb.position + movimiento * velocidadMovimiento * Time.fixedDeltaTime);
     }
 }

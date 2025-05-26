@@ -9,7 +9,8 @@ public class inventoryManager : MonoBehaviour
     public ScriptableItems[] weapons;
     public Text[] weaponsNames;
     public Image[] weaponsSprites;
-    public InventorySlot[] weaponsSlots; 
+   
+    
     void Awake()
     {
         if(isntance != null && isntance != this)
@@ -30,11 +31,10 @@ public class inventoryManager : MonoBehaviour
                 weapons[i] = item;
                 weaponsNames[i].text = item.itemName;
                 weaponsSprites[i].sprite = item.itemSprite;
-                weaponsSlots[i].slotItem = item; 
-                weaponsSlots[i]. slotNumber = i; 
                 return;
             }
         }
     }
 
 }
+
